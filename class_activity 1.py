@@ -1,5 +1,4 @@
 #classwork 1
-
 name = input("Enter the name:")
 num1 = float(input("Enter the number:"))
 num2 = float(input("Enter the number:"))
