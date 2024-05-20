@@ -15,19 +15,16 @@ books_dict["data Structure and Algorithms"] = "Jane Doe"
 books_list.append("Machine Learning basics")
 authors_set.add("Alice Johnson")
 books_dict["Machine Learning basics"] = "Alice Johnson"
-
 # Search for a book 
 search_title = input("Enter the title of the book to search: ")
 if search_title in books_list:
     print(f"Books found! Author: {books_dict[search_title]}")
 else:
     print("Book not found!")
-
 # Display all books
 print("Lists of books:")
 for books in books_list:
      print(books)
-
 # Remove a book
 remove_title = input("Enter the title of the book to remove or else enter the skips: ")
 if remove_title in books_list:
