@@ -1,6 +1,6 @@
 #pattern
 
-for i in range(1,25):
-    x="-"
+for i in range(1,10):
+    x="*"
     x=x*i
     print(f"{x}")

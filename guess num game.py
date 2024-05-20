@@ -24,7 +24,7 @@ def guess_recursive(attempts_left):
         print(f"wrong guess. Attempts left: {attempts_left-1}")
         if attempts_left > 1:
             #mark a recursive call for another guess
-            guess_recursive(attempt_left - 1)
+            guess_recursive(attempts_left - 1)
         else:
             print(f"\nsorry, you couldn't guess the number. The correct number was {secret_number}.")
 
