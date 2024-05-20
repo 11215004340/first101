@@ -24,7 +24,8 @@ print(not(x > 3 and x < 10))
 y = 12
 print(not(y > 10 and y % 5 == 0)) 
 
-#checking self 
+    #checking self
+     
 # Example 1 ("AND")
 x=11
 print(x>8 and x<12)
