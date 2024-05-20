@@ -8,4 +8,4 @@ def sum_of_digits(n):
 
         return last_digits + sum_of_digits(remaining_digits)
     
-print(sum_of_digits(1234))
+print(sum_of_digits(123))
