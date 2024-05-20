@@ -6,4 +6,4 @@ def reverse_string(s):
 
     return reversed_string
 
-print(reverse_string("cute miss"))
+print(reverse_string("beautiful world"))
