@@ -1,3 +1,5 @@
+#multiplication table 
+
 num_multiply = int(input ("Enter the number you want to multiply of : "))
 limit_num = int(input("Enter the number till where you want to multiply: "))
 print(f"The multiplication of {num_multiply} till {limit_num} is: ")
