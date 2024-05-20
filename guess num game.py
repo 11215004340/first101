@@ -3,7 +3,6 @@ import random
 
 #Generate a random number between 1 to 10
 secret_number = random.randint(1, 10)
-
 #Mximum attempts allowed
 max_attempts = 3
 
@@ -31,6 +30,5 @@ def guess_recursive(attempts_left):
 #calling the function 
 welcome_message()
 guess_recursive(max_attempts)
-
 #using id() to get memory addresses
 print(f"Memory address of Secret number {secret_number} is: {id(secret_number)}")
