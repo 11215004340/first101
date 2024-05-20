@@ -18,11 +18,11 @@ print(y < 10 or y % 2 == 0)
 #Not operator
 # Example 5
 x = 5
-print(not(x > 3 and x < 10))  #false because the condition inside the not is true
+print(not(x > 3 and x < 10))  
 
 # Example 6
 y = 12
-print(not(y > 10 and y % 5 == 0)) #true becaouse the condition inside the not is false
+print(not(y > 10 and y % 5 == 0)) 
 
 #checking self 
 # Example 1 ("AND")
