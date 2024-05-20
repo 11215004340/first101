@@ -22,6 +22,7 @@ def search_element(arr, element):
             if arr[i][j] == element:
                 print(f"Element found at position: row = {i}, column = {j}")
                 found = True
+                return 
     if not found:
         print("Element not found in the given array.")
 
@@ -30,12 +31,12 @@ arr = [
     [9, 2, 3],
     [4, 5, 6],
     [7, 8, 1]
-     ]
+]
 
 print(arr)
 bubble_sort_2d(arr)
 print(arr)
 
-        #searching for an element
+ #searching for an element
 search = int(input("Enter the element to search: "))
 search_element(arr, search)
