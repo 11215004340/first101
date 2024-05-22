@@ -22,7 +22,7 @@ class SinglyLinkedList: # Define the constructor method for the SinglyLinkedList
         while current: 
             print(current.data, end="-> ") # Move to the next node in the linked list. 
             current = current.next # Print "None" to signify the end of the linked list. 
-        print("None") # Example usage: # Create an instance of the SinglyLinkedList class. 
+        print("None")  
 
 sll = SinglyLinkedList() # Append some elements to the linked list. 
 sll.append(1) 
