@@ -10,7 +10,7 @@ class Solution:
         # Recursive case: Move N-1 disks from 'fromm' to 'aux', using 'to' as an auxiliary rod 
         moves = 0 
         moves += self.toh(N-1, fromm, aux, to) # Recursive call 
-        moves += 1 # Increment the total moves count for the current step 
+        moves += 1  
     
     # Move the remaining largest disk from 'fromm' to 'to' 
         print("move disk " + str(N) + " from rod " + str(fromm) + " to rod " + str(to)) 
