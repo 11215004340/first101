@@ -29,3 +29,4 @@ sll.append(1)
 sll.append(2) 
 sll.append(3) # Display the elements of the linked list. 
 sll.display()
+jdjdjdjcncncjcn
