@@ -1,58 +1,38 @@
 class Person:
-    def __init__(self, name, age, cid_number):
+    def __init__(self, name, age, designation,gender):
         self.name = name
         self.age = age
-        self.cid_number = cid_number
+        self.designation = designation
+        self.gender = gender
+    def introduce(self):
+        print(f"Hello, my name is {self.name}, I am {self.age} years old.")
+        print(f"My designation is: {self.designation}")
+        print(f"Gender :{self.gender}")
 
-    def walk(self):
-        print(f"{self.name} is walking.")
 
-    def talk(self):
-        print(f"{self.name} is talking.")
+class Student(Person):
+    def __init__(self, name, age, designation,gender, student_id):
+        super().__init__(name, age, designation,gender)
+        self.student_id = student_id
 
-    def eat(self):
-        print(f"{self.name} is eating.")
-
-    def sleep(self):
-        print(f"{self.name} is sleeping.")
+    def study(self):
+        print(f"{self.name} is studying.")
 
 class Teacher(Person):
-    def __init__(self, name, age, cid_number, subject, salary, department, designation):
-        super().__init__(name, age, cid_number)
+    def __init__(self, name, age, designation,gender, subject):
+        super().__init__(name, age,designation, gender)
         self.subject = subject
-        self.salary = salary
-        self.department = department
-        self.designation = designation
 
     def teach(self):
         print(f"{self.name} is teaching {self.subject}.")
 
-    def grade_students(self):
-        print(f"{self.name} is grading students.")
+# Creating objects
+student1 = Student("Shyam", 20, "Student","male", "S001")
+teacher1 = Teacher("Mr. Ghalley", 35, "HOD","male", "Mathematics")
 
-    def attend_meeting(self):
-        print(f"{self.name} is attending a meeting.")
+# Example usage
+student1.introduce()  
+student1.study()      
 
-class Student(Person):
-    def __init__(self, name, age, cid_number, student_id, course, year, gpa):
-        super().__init__(name, age, cid_number)
-        self.student_id = student_id
-        self.course = course
-        self.year = year
-        self.gpa = gpa
-
-    def study(self):
-        print(f"{self.name} is studying for {self.course}.")
-
-    def attend_class(self):
-        print(f"{self.name} is attending {self.course} class.")
-
-    def write_exam(self):
-        print(f"{self.name} is writing an exam for {self.course}.")
-
-# Example usage:
-teacher1 = Teacher("Ms.Sonam Yangchen", 26, "11111111111", "Csf", 60000, "IT department", "Lecturer")
-student1 = Student("Sam ", 20, "11215004340", "02230225", "Csf coding", 1, 45)
-
-teacher1.teach()
-student1.study()
+teacher1.introduce()  
+teacher1.teach()     
